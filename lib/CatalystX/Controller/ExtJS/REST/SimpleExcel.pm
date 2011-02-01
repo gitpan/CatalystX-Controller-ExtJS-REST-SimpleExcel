@@ -7,30 +7,14 @@
 #
 #   The (three-clause) BSD License
 #
-package # hide from pause
-    CatalystX::Controller::ExtJS::REST::SimpleExcel::ApplicationToClass;
-use Moose;
-extends 'Moose::Meta::Role::Application::ToClass';
-
-after apply => sub {
-    my ($self, $role, $class) = @_;
-    $class->name->config->{map}{'application/vnd.ms-excel'} = 'SimpleExcel';
-};
-
-package # hide from pause
-    CatalystX::Controller::ExtJS::REST::SimpleExcel::Trait;
-use Moose::Role;
-
-sub application_to_class_class {
-    'CatalystX::Controller::ExtJS::REST::SimpleExcel::ApplicationToClass';
-}
-
 package CatalystX::Controller::ExtJS::REST::SimpleExcel;
 BEGIN {
-  $CatalystX::Controller::ExtJS::REST::SimpleExcel::VERSION = '0.1.0';
+  $CatalystX::Controller::ExtJS::REST::SimpleExcel::VERSION = '0.1.1';
 }
 # ABSTRACT: Serialize to Excel spreadsheets
 use Moose::Role -traits => 'CatalystX::Controller::ExtJS::REST::SimpleExcel::Trait';
+use strict;
+use warnings;
 use JSON::XS ();
 
 after list => sub {
@@ -68,11 +52,11 @@ after list => sub {
 
 =head1 NAME
 
-CatalystX::Controller::ExtJS::REST::SimpleExcel::ApplicationToClass - Serialize to Excel spreadsheets
+CatalystX::Controller::ExtJS::REST::SimpleExcel - Serialize to Excel spreadsheets
 
 =head1 VERSION
 
-version 0.1.0
+version 0.1.1
 
 =head1 SYNOPSIS
 

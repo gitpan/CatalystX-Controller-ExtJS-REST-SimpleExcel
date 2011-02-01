@@ -8,6 +8,7 @@ README
 README.pod
 dist.ini
 lib/CatalystX/Controller/ExtJS/REST/SimpleExcel.pm
+lib/CatalystX/Controller/ExtJS/REST/SimpleExcel/Trait.pm
 t/00-compile.t
 t/000-report-versions-tiny.t
 t/basic.t

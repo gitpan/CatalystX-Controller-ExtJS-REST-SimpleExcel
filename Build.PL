@@ -33,7 +33,7 @@ my %module_build_args = (
     'Moritz Onken'
   ],
   'dist_name' => 'CatalystX-Controller-ExtJS-REST-SimpleExcel',
-  'dist_version' => '0.1.0',
+  'dist_version' => '0.1.1',
   'license' => 'bsd',
   'module_name' => 'CatalystX::Controller::ExtJS::REST::SimpleExcel',
   'recommends' => {},

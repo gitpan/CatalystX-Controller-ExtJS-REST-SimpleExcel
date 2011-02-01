@@ -58,15 +58,15 @@
    "provides" : {
       "CatalystX::Controller::ExtJS::REST::SimpleExcel" : {
          "file" : "lib/CatalystX/Controller/ExtJS/REST/SimpleExcel.pm",
-         "version" : "v0.1.0"
+         "version" : "v0.1.1"
       },
       "CatalystX::Controller::ExtJS::REST::SimpleExcel::ApplicationToClass" : {
-         "file" : "lib/CatalystX/Controller/ExtJS/REST/SimpleExcel.pm",
-         "version" : "v0.1.0"
+         "file" : "lib/CatalystX/Controller/ExtJS/REST/SimpleExcel/Trait.pm",
+         "version" : "v0.1.1"
       },
       "CatalystX::Controller::ExtJS::REST::SimpleExcel::Trait" : {
-         "file" : "lib/CatalystX/Controller/ExtJS/REST/SimpleExcel.pm",
-         "version" : "v0.1.0"
+         "file" : "lib/CatalystX/Controller/ExtJS/REST/SimpleExcel/Trait.pm",
+         "version" : "v0.1.1"
       }
    },
    "release_status" : "stable",
@@ -82,7 +82,7 @@
          "web" : "http://github.com/monken/p5-catalystx-controller-extjs-rest-simpleexcel"
       }
    },
-   "version" : "0.1.0",
+   "version" : "0.1.1",
    "x_Dist_Zilla" : {
       "plugins" : [
          {
